@@ -5,4 +5,10 @@ module.exports = {
   username: 'postgres',
   password: '12345',
   database: 'radiodb',
+  define: {
+    timestamps: true,
+    underscored: true,
+    underscoredAll: true,
+  },
+
 };

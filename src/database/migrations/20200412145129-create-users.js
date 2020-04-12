@@ -1,4 +1,3 @@
-
 module.exports = {
   up: (queryInterface, Sequelize) => queryInterface.createTable('users', {
     id: {
@@ -18,6 +17,19 @@ module.exports = {
     },
     password_hash: {
       type: Sequelize.STRING,
+      allowNull: false,
+    },
+    admin: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: true,
+      allowNull: false,
+    },
+    created_at: {
+      type: Sequelize.DATE,
+      allowNull: false,
+    },
+    updated_at: {
+      type: Sequelize.DATE,
       allowNull: false,
     },
   }),
