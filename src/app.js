@@ -1,11 +1,14 @@
 import express from 'express';
 import cors from 'cors';
 import routes from './routes';
-import './database';
+
 
 require('dotenv').config({
   path: process.env.NODE_ENV === 'test' ? '.env.test' : '.env',
 });
+// eslint-disable-next-line import/first
+import './database';
+
 
 class App {
   constructor() {
