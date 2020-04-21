@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "set NODE_ENV=test && jest",
     "dev": "nodemon src/server.js"
   },
   "keywords": [],
